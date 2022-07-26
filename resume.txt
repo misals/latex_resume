@@ -1,0 +1,281 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+\hypersetup{
+    colorlinks = true,
+    linkcolor=blue,
+    filecolor=magneta,
+    urlcolor=cyan,
+    citecolor=green
+}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Suraj Misal} % Your Name
+\newcommand{\course}{B.E - Information Technology} % Your Course
+\newcommand{\roll}{xxxxxxxx} % Your Roll No.
+\newcommand{\phone}{8308361634} % Your Phone Number
+\newcommand{\emaila}{surajmisal18@gmail.com} %Email 1
+\newcommand{\github}{misals} %Github
+\newcommand{\website}{https://example.com} %Website
+\newcommand{\linkedin}{suraj-misal-b772a9137/} %linkedin
+\newcommand{\leetcode}{suraj_misal/} % leetcode
+\newcommand{\codechef}{suraj_misal/} % codechef
+\newcommand{\codeforces}{surajmisal18/} % codeforces
+\newcommand{\hackerrank}{surajmisal18/} % hackerrank
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} github.com/xxxxxxx} |  \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin.com/in/xxxxxxxxxx} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +91-\phone }
+\end{center}
+\vspace{-3mm}
+%-------------------------------------
+
+\section{Professional Summery}
+\resumeSubHeadingListStart
+
+\resumeItemListStart
+\item[$\bullet$] Joined Wipro Limited, India in Mar 2021 as a Project Engineer and Currently working as a Software Engineer in the same organization.
+\item[$\bullet$] Have most experience in Core Java, Spring Boot, RestAPI.
+\item[$\bullet$] Programming since last one year and have good hold on Data Structure and Algorithms.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Dr. J J Magdum College of Engineering, Jaysingpur, India.} 
+{Bachelors of Technology in Information Technology} 
+{Jul 2016 - Jun 2020} %Event Dates
+{Percentage : 69/100} %Website
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{Wipro Limited}
+{Software Engineer}
+{Mar 2021 - Present}
+{Pune, India}
+\resumeItemListStart
+\item[$\bullet$] Working on Jira tickets. Work is based on validating user information using common authentication mechanism (CAM).
+\item[$\bullet$] Working on different token's like OAuth, Refresh, Access, CSK1 which are generally used in login process of user.
+\item[$\bullet$] Responsible for troubleshooting or debugging the API request's and finding out the root cause of the issue.
+\item[$\bullet$] Tech tools : Postman, Studio3t, BitBucket, Intellij, Splunk, SourceTree.
+\item[$\bullet$] Tech Stacks : Java J2EE, SpringBoot, REST API, MongoDB, Service Registry.
+\resumeItemListEnd
+
+
+\resumeExp
+{Wisdom Sprouts}
+{Intern}
+{May 2019 - July 2019}
+{Pune, India}
+\resumeItemListStart
+\item[$\bullet$] Responsible for creating responsive Web pages
+\item[$\bullet$] Designing web pages according to Customer's demand.
+\item[$\bullet$] Tech Stacks : HTML, CSS, JavaScript
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Project 1}
+{Prof. XYZ,  IIT Guwahati} %Project Name, Location Name
+{Jul 2020 - Nov 2020} %Event Dates
+{\href{https://github.com/}{git.io/xxxx}} 
+\resumeItemListStart
+\item[$\bullet$] Project Description 1
+\item[$\bullet$] Project Description 2
+\resumeItemListEnd
+
+
+\resumeProject
+{Project 2} %Project Name
+{Coding Club, IIT Guwahati} %Project Name, Location Name
+{Apr 2020 - Jul 2020} %Event Dates
+{\href{https://github.com/}{git.io/xxxx}} %Website
+\resumeItemListStart
+\item[$\bullet$] Project Description 1
+\item[$\bullet$] Project Description 2
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+
+\section{Achievements}
+\vspace{0.2mm}
+\small{\begin{tabular*}{\textwidth}[t]{p{0.22\textwidth} p{0.68\textwidth}@{\extracolsep{\fill}}r}
+
+
+\resumeAchieve{LeetCode : }{Solved 250+ Problems on Leetcode. (Maximum rating : 1505) Handle :
+\href{https://leetcode.com/\leetcode}{suraj misal}}
+
+\resumeAchieve{CodeChef : }{Solved 290+ Problems on Codechef. (Maximum rating : 1728) Handle : \href{https://www.codechef.com/users/\codechef}{suraj misal}}
+
+\resumeAchieve{CodeForces: }{Solved 650+ Problems on Codeforces. (Maximum rating : 1182) Handle : \href{https://codeforces.com/profile/\codeforces}{surajmisal18}}
+
+\resumeAchieve{HackerRank : }{Earned 5 stars in problem solving and C language. Also, Earned 4 stars in C++ language. Handle :  \href{https://www.hackerrank.com/\hackerrank}{surajmisal18}}
+
+\resumeAchieve{HackerEarth : }{Solved 150+ Problems on HackerEarth. (Maximum rating : 1458) Earned 2265 points. Handle : \href{https://www.hackerearth.com/@surajmisal18}{suraj misal18}}
+
+\resumeAchieve{Winner of CodeFlash : }{Winner of CodeFlash (coding event) under TECHART 2K21 held on 21 May2021. View Certificate : \href{https://drive.google.com/file/d/1CYNb5SzLrUHUO5A2XTUoPZfOUdpjjmME/view}{CODEFLASH Suraj Misal}}
+
+%\resumeAchieve{Winner of CodeFlash : }{Winner of CodeFlash (coding event) under TECHART 2K21 held on 21 May2021.}{View Certificate : \href{https://drive.google.com/file/d/1CYNb5SzLrUHUO5A2XTUoPZfOUdpjjmME/view}{CODEFLASH Suraj Misal}}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Programming languages : } C++, C, Java J2EE}\\
+\hspace{-3.1mm}{\textbf{ Web Technologies : } HTML, CSS, JavaScript}\\  
+\hspace{-3.1mm} {\textbf{Miscellaneous : } MySQL, MongoDB, Git, BitBucket}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+
+\vspace{2.0mm}
+\section{ADDITIONAL}
+\vspace{-0.4mm}
+
+\resumeItemListStart
+\item[$\bullet$] \textbf{Soft Skills :} Enthusiastic, Team Work, Inteaction with Client/end user's, Time Management.
+\item[$\bullet$] \textbf{Training and Placement Coordinator, Information Technology, JJMCOE.} (Apr 2019 - May 2020)
+\item[$\bullet$] \textbf{Played National level Football Tournament.} Played 50+ Football tournaments and won some of them.
+\vspace{0mm}
+\resumeItemListEnd
+%-------------------------------------------
+\end{document}
+
